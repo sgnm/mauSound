@@ -38,6 +38,42 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 642.0, 150.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Kick"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 493.5, 150.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Snare"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 353.0, 150.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Hi Hat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -81,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "list", "list" ],
-					"patching_rect" : [ 329.0, 601.0, 85.0, 22.0 ],
+					"patching_rect" : [ 329.0, 518.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "omx.peaklim~"
 				}
@@ -94,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 419.0, 601.0, 90.0, 24.0 ],
+					"patching_rect" : [ 419.0, 518.0, 90.0, 24.0 ],
 					"style" : "",
 					"text" : "リミッター"
 				}
@@ -107,48 +143,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 374.0, 641.5, 159.0, 24.0 ],
+					"patching_rect" : [ 374.0, 558.5, 159.0, 24.0 ],
 					"style" : "",
 					"text" : "オーディオ出力のon/off"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-16",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 644.0, 148.0, 60.0, 24.0 ],
-					"style" : "",
-					"text" : "Kick"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 494.0, 148.0, 60.0, 24.0 ],
-					"style" : "",
-					"text" : "Snare"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 359.0, 148.0, 60.0, 24.0 ],
-					"style" : "",
-					"text" : "Hi Hat"
 				}
 
 			}
@@ -188,34 +185,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 674.0, 300.0, 64.0, 50.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-2",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 734.0, 232.5, 188.0, 51.0 ],
-					"style" : "",
-					"text" : "音量が1（入力された音量）から0（無音）になるまで200msec."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-4",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 734.0, 172.5, 188.0, 37.0 ],
-					"style" : "",
-					"text" : "512hzから128hzまで10msec. そこから65hzまで100msec."
 				}
 
 			}
@@ -377,7 +346,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 614.0, 361.0, 48.0, 80.0 ],
+					"patching_rect" : [ 614.0, 300.0, 48.0, 80.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[2]",
@@ -444,7 +413,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 329.0, 487.0, 48.0, 80.0 ],
+					"patching_rect" : [ 329.0, 404.0, 48.0, 80.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -482,7 +451,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 329.0, 631.0, 45.0, 45.0 ],
+					"patching_rect" : [ 329.0, 548.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
