@@ -38,6 +38,63 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"ft1" : 5.0,
+					"id" : "obj-107",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 321.5, 939.166687, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 260.5, 861.166687, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-102",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 321.5, 900.166687, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "sfrecord~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 321.5, 861.166687, 113.0, 22.0 ],
+					"style" : "",
+					"text" : "open mauEffect.aiff"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -45,7 +102,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 485.0, 106.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "store 2"
+					"text" : "store 3"
 				}
 
 			}
@@ -82,10 +139,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 881.5, 346.666656, 35.0, 22.0 ],
-					"presentation_rect" : [ 862.5, 325.666687, 0.0, 0.0 ],
+					"patching_rect" : [ 881.5, 346.666656, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "read"
+					"text" : "read slide-rock.aif"
 				}
 
 			}
@@ -109,10 +165,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 881.5, 256.666687, 35.0, 22.0 ],
-					"presentation_rect" : [ 862.5, 239.666672, 0.0, 0.0 ],
+					"patching_rect" : [ 881.5, 256.666687, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "read"
+					"text" : "read beep-rejected.aif"
 				}
 
 			}
@@ -126,7 +181,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 946.0, 489.666656, 50.0, 22.0 ],
-					"presentation_rect" : [ 944.0, 489.666656, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -141,7 +195,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 796.0, 489.666656, 50.0, 22.0 ],
-					"presentation_rect" : [ 796.0, 489.666656, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -154,8 +207,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.0, 524.666565, 56.0, 35.0 ],
-					"presentation_rect" : [ 869.0, 524.666626, 0.0, 0.0 ],
+					"patching_rect" : [ 870.0, 524.666565, 58.0, 35.0 ],
 					"style" : "",
 					"text" : "startloop $1"
 				}
@@ -169,7 +221,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 946.0, 524.666504, 50.0, 22.0 ],
-					"presentation_rect" : [ 945.0, 524.666565, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sig~ $1"
 				}
@@ -185,7 +236,6 @@
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 870.0, 616.666565, 27.0, 80.0 ],
-					"presentation_rect" : [ 869.0, 616.666626, 0.0, 0.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[9]",
@@ -240,8 +290,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.0, 524.666626, 56.0, 35.0 ],
-					"presentation_rect" : [ 722.0, 524.666687, 0.0, 0.0 ],
+					"patching_rect" : [ 720.0, 524.666626, 58.0, 35.0 ],
 					"style" : "",
 					"text" : "startloop $1"
 				}
@@ -255,7 +304,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 796.0, 524.666565, 50.0, 22.0 ],
-					"presentation_rect" : [ 798.0, 524.666626, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sig~ $1"
 				}
@@ -271,7 +319,6 @@
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 720.0, 616.666626, 27.0, 80.0 ],
-					"presentation_rect" : [ 722.0, 616.666687, 0.0, 0.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[6]",
@@ -328,7 +375,6 @@
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 583.0, 743.666687, 48.0, 80.0 ],
-					"presentation_rect" : [ 594.0, 722.666687, 0.0, 0.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[5]",
@@ -354,7 +400,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 583.0, 962.333374, 85.0, 20.0 ],
-					"presentation_rect" : [ 596.0, 922.333374, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "glitch sound"
 				}
@@ -383,7 +428,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 585.0, 313.666656, 32.5, 22.0 ],
-					"presentation_rect" : [ 564.0, 210.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -401,7 +445,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 675.0, 283.666656, 50.0, 22.0 ],
-					"presentation_rect" : [ 654.0, 180.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -414,7 +457,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 585.0, 283.666656, 20.0, 20.0 ],
-					"presentation_rect" : [ 564.0, 180.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -429,7 +471,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
 					"patching_rect" : [ 585.0, 253.666656, 90.0, 22.0 ],
-					"presentation_rect" : [ 564.0, 150.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t b i"
 				}
@@ -444,7 +485,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 615.0, 173.666672, 35.0, 20.0 ],
-					"presentation_rect" : [ 594.0, 70.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "BPM"
 				}
@@ -463,7 +503,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 615.0, 193.666672, 50.0, 22.0 ],
-					"presentation_rect" : [ 594.0, 90.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -477,7 +516,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 193.666672, 20.0, 20.0 ],
-					"presentation_rect" : [ 564.0, 90.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -493,7 +531,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 585.0, 223.666672, 94.0, 22.0 ],
-					"presentation_rect" : [ 564.0, 120.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "tempo 120 1 16"
 				}
@@ -510,7 +547,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 711.5, 149.666672, 72.0, 22.0 ],
-					"presentation_rect" : [ 690.5, 46.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
@@ -524,14 +560,17 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 711.5, 179.666672, 100.0, 40.0 ],
-					"presentation_rect" : [ 690.5, 76.0, 0.0, 0.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
 							"data" : [ 5, "<invalid>", "number", "int", 16, 5, "obj-51", "flonum", "float", 80.0, 5, "obj-77", "live.grid", "mode", 0, 5, "obj-77", "live.grid", "matrixmode", 1, 5, "obj-77", "live.grid", "columns", 16, 5, "obj-77", "live.grid", "rows", 3, 8, "obj-77", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-77", "live.grid", "clear", 8, "obj-77", "live.grid", "steps", 1, 1, 1, 3, 6, "obj-77", "live.grid", "steps", 3, 3, 10, "obj-77", "live.grid", "steps", 5, 1, 5, 2, 5, 3, 6, "obj-77", "live.grid", "steps", 7, 3, 8, "obj-77", "live.grid", "steps", 9, 1, 9, 3, 6, "obj-77", "live.grid", "steps", 11, 3, 10, "obj-77", "live.grid", "steps", 13, 1, 13, 2, 13, 3, 6, "obj-77", "live.grid", "steps", 15, 3, 20, "obj-77", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-221", "number", "int", 10, 5, "obj-225", "flonum", "float", 120.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 6, "obj-204", "live.grid", "steps", 1, 1, 6, "obj-204", "live.grid", "steps", 3, 3, 6, "obj-204", "live.grid", "steps", 4, 2, 6, "obj-204", "live.grid", "steps", 5, 3, 6, "obj-204", "live.grid", "steps", 6, 3, 6, "obj-204", "live.grid", "steps", 7, 2, 6, "obj-204", "live.grid", "steps", 8, 1, 6, "obj-204", "live.grid", "steps", 9, 2, 6, "obj-204", "live.grid", "steps", 10, 1, 6, "obj-204", "live.grid", "steps", 11, 3, 6, "obj-204", "live.grid", "steps", 15, 2, 6, "obj-204", "live.grid", "steps", 16, 3, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+							"data" : [ 5, "obj-244", "flonum", "float", 1.0, 5, "obj-243", "flonum", "float", 1.0, 5, "obj-221", "number", "int", 1, 5, "obj-124", "flonum", "float", 1.0, 5, "obj-225", "flonum", "float", 120.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 6, "obj-204", "live.grid", "steps", 1, 1, 6, "obj-204", "live.grid", "steps", 3, 3, 6, "obj-204", "live.grid", "steps", 4, 2, 6, "obj-204", "live.grid", "steps", 5, 3, 6, "obj-204", "live.grid", "steps", 6, 3, 6, "obj-204", "live.grid", "steps", 7, 2, 6, "obj-204", "live.grid", "steps", 8, 1, 6, "obj-204", "live.grid", "steps", 9, 2, 6, "obj-204", "live.grid", "steps", 10, 1, 6, "obj-204", "live.grid", "steps", 11, 3, 6, "obj-204", "live.grid", "steps", 15, 2, 6, "obj-204", "live.grid", "steps", 16, 3, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-244", "flonum", "float", 1.0, 5, "obj-243", "flonum", "float", 1.0, 5, "obj-221", "number", "int", 12, 5, "obj-124", "flonum", "float", 1.0, 5, "obj-225", "flonum", "float", 120.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 6, "obj-204", "live.grid", "steps", 1, 1, 6, "obj-204", "live.grid", "steps", 3, 3, 6, "obj-204", "live.grid", "steps", 4, 2, 6, "obj-204", "live.grid", "steps", 5, 3, 6, "obj-204", "live.grid", "steps", 6, 3, 6, "obj-204", "live.grid", "steps", 7, 2, 6, "obj-204", "live.grid", "steps", 8, 1, 6, "obj-204", "live.grid", "steps", 9, 2, 6, "obj-204", "live.grid", "steps", 10, 1, 6, "obj-204", "live.grid", "steps", 11, 3, 6, "obj-204", "live.grid", "steps", 15, 2, 6, "obj-204", "live.grid", "steps", 16, 3, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
  ],
 					"style" : ""
@@ -546,7 +585,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 804.0, 296.666656, 37.0, 22.0 ],
-					"presentation_rect" : [ 784.0, 180.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -560,7 +598,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 742.0, 296.666656, 51.0, 22.0 ],
-					"presentation_rect" : [ 722.0, 180.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "random"
 				}
@@ -576,7 +613,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
 					"patching_rect" : [ 585.0, 429.666656, 79.0, 22.0 ],
-					"presentation_rect" : [ 560.0, 313.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "unpack 0 0 0"
 				}
@@ -590,7 +626,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 870.0, 489.666656, 20.0, 20.0 ],
-					"presentation_rect" : [ 845.0, 373.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -603,7 +638,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 720.0, 489.666656, 20.0, 20.0 ],
-					"presentation_rect" : [ 695.0, 373.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -619,7 +653,6 @@
 					"outlettype" : [ "", "", "", "", "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 585.0, 356.666656, 270.0, 60.0 ],
-					"presentation_rect" : [ 560.0, 240.0, 0.0, 0.0 ],
 					"rows" : 3,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -643,7 +676,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 585.0, 489.666656, 20.0, 20.0 ],
-					"presentation_rect" : [ 560.0, 373.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -658,7 +690,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "bang", "" ],
 					"patching_rect" : [ 585.0, 459.666656, 405.0, 22.0 ],
-					"presentation_rect" : [ 560.0, 343.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sel 3 2 1"
 				}
@@ -672,7 +703,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 585.0, 524.666687, 56.0, 35.0 ],
+					"patching_rect" : [ 585.0, 524.666687, 58.0, 35.0 ],
 					"style" : "",
 					"text" : "startloop $1"
 				}
@@ -804,9 +835,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 881.5, 169.666672, 35.0, 22.0 ],
+					"patching_rect" : [ 881.5, 169.666672, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "read"
+					"text" : "read beep-bop.aif"
 				}
 
 			}
@@ -1524,7 +1555,11 @@
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-60", "number", "int", 10, 5, "obj-51", "flonum", "float", 120.0, 5, "obj-77", "live.grid", "mode", 0, 5, "obj-77", "live.grid", "matrixmode", 1, 5, "obj-77", "live.grid", "columns", 16, 5, "obj-77", "live.grid", "rows", 3, 8, "obj-77", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-77", "live.grid", "clear", 6, "obj-77", "live.grid", "steps", 1, 3, 6, "obj-77", "live.grid", "steps", 2, 3, 6, "obj-77", "live.grid", "steps", 3, 2, 6, "obj-77", "live.grid", "steps", 5, 3, 6, "obj-77", "live.grid", "steps", 6, 3, 6, "obj-77", "live.grid", "steps", 7, 2, 6, "obj-77", "live.grid", "steps", 8, 1, 6, "obj-77", "live.grid", "steps", 9, 2, 6, "obj-77", "live.grid", "steps", 11, 1, 6, "obj-77", "live.grid", "steps", 12, 2, 6, "obj-77", "live.grid", "steps", 13, 2, 6, "obj-77", "live.grid", "steps", 15, 2, 6, "obj-77", "live.grid", "steps", 16, 2, 20, "obj-77", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+							"data" : [ 5, "obj-60", "number", "int", 1, 5, "obj-51", "flonum", "float", 120.0, 5, "obj-77", "live.grid", "mode", 0, 5, "obj-77", "live.grid", "matrixmode", 1, 5, "obj-77", "live.grid", "columns", 16, 5, "obj-77", "live.grid", "rows", 3, 8, "obj-77", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-77", "live.grid", "clear", 6, "obj-77", "live.grid", "steps", 1, 3, 6, "obj-77", "live.grid", "steps", 2, 3, 6, "obj-77", "live.grid", "steps", 3, 2, 6, "obj-77", "live.grid", "steps", 5, 3, 6, "obj-77", "live.grid", "steps", 6, 3, 6, "obj-77", "live.grid", "steps", 7, 2, 6, "obj-77", "live.grid", "steps", 8, 1, 6, "obj-77", "live.grid", "steps", 9, 2, 6, "obj-77", "live.grid", "steps", 11, 1, 6, "obj-77", "live.grid", "steps", 12, 2, 6, "obj-77", "live.grid", "steps", 13, 2, 6, "obj-77", "live.grid", "steps", 15, 2, 6, "obj-77", "live.grid", "steps", 16, 2, 20, "obj-77", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-60", "number", "int", 12, 5, "obj-51", "flonum", "float", 120.0, 5, "obj-77", "live.grid", "mode", 0, 5, "obj-77", "live.grid", "matrixmode", 1, 5, "obj-77", "live.grid", "columns", 16, 5, "obj-77", "live.grid", "rows", 3, 8, "obj-77", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-77", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-77", "live.grid", "clear", 6, "obj-77", "live.grid", "steps", 1, 3, 6, "obj-77", "live.grid", "steps", 2, 3, 6, "obj-77", "live.grid", "steps", 3, 2, 6, "obj-77", "live.grid", "steps", 5, 3, 6, "obj-77", "live.grid", "steps", 6, 3, 6, "obj-77", "live.grid", "steps", 7, 2, 6, "obj-77", "live.grid", "steps", 8, 1, 6, "obj-77", "live.grid", "steps", 9, 2, 6, "obj-77", "live.grid", "steps", 11, 1, 6, "obj-77", "live.grid", "steps", 12, 2, 6, "obj-77", "live.grid", "steps", 13, 2, 6, "obj-77", "live.grid", "steps", 15, 2, 6, "obj-77", "live.grid", "steps", 16, 2, 20, "obj-77", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
  ],
 					"style" : ""
@@ -1533,6 +1568,24 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-102", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"disabled" : 0,
@@ -1556,6 +1609,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-116", 0 ]
 				}
 
 			}
@@ -1628,6 +1699,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -1858,6 +1947,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-124", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-229", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-204", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1879,6 +1977,24 @@
 					"destination" : [ "obj-225", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
+					"source" : [ "obj-229", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-243", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-229", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-244", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-229", 0 ]
 				}
 
@@ -2159,6 +2275,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
