@@ -38,6 +38,150 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-439",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2057.5, 335.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-440",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2047.0, 377.669922, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "*~ 0.2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-389",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1158.5, 1524.333496, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-390",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1148.0, 1567.003418, 36.0, 22.0 ],
+					"style" : "",
+					"text" : "*~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-388",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 202.0, 1516.000122, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-319",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 191.5, 1558.670044, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "*~ 0.2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-357",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 979.166687, 97.333336, 143.0, 22.0 ],
+					"style" : "",
+					"text" : "read phone_hello.aif"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-356",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 979.166687, 49.333332, 143.0, 22.0 ],
+					"style" : "",
+					"text" : "read be_extra_careful.aif"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-341",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1828.333374, 1426.666748, 63.333332, 20.0 ],
+					"style" : "",
+					"text" : "ending"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-340",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1739.0, 1426.666748, 63.333332, 20.0 ],
+					"style" : "",
+					"text" : "opening"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-322",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 791.716675, 764.000061, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "-100"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-355",
 					"maxclass" : "newobj",
@@ -663,7 +807,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.5, 121.333336, 55.0, 22.0 ],
 					"style" : "",
-					"text" : "store 19"
+					"text" : "store 12"
 				}
 
 			}
@@ -868,19 +1012,6 @@
 ,
 					"style" : "",
 					"text" : "sfplay~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-147",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1893.329956, 404.0, 100.0, 22.0 ],
-					"style" : "",
-					"text" : "*~ 1."
 				}
 
 			}
@@ -1098,8 +1229,8 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 1256.039917, "ticks" ],
-						"originaltempo" : 119.999992,
+						"originallength" : [ 1496.39978, "ticks" ],
+						"originaltempo" : 119.999985,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
 						"timestretch" : [ 0 ]
@@ -1830,32 +1961,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-148",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1849.716675, 1248.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "loop $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-149",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1765.916748, 1248.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "loop $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-150",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1953,9 +2058,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1855.666748, 1192.333374, 43.5, 49.0 ],
+					"patching_rect" : [ 1855.666748, 1192.333374, 44.049927, 49.0 ],
 					"style" : "",
-					"text" : "open swingy.wav"
+					"text" : "open end.mp3"
 				}
 
 			}
@@ -2000,7 +2105,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 3845.180908, "ticks" ],
+						"originallength" : [ 16934.400391, "ticks" ],
 						"originaltempo" : 120.0,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -2028,14 +2133,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-173",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1772.416748, 1192.333374, 43.5, 49.0 ],
+					"patching_rect" : [ 1772.416748, 1192.333374, 43.5, 62.0 ],
 					"style" : "",
-					"text" : "open refrige.mp3"
+					"text" : "open start_new.mp3"
 				}
 
 			}
@@ -2080,8 +2185,8 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 3072.0, "ticks" ],
-						"originaltempo" : 120.0,
+						"originallength" : [ 65295.363281, "ticks" ],
+						"originaltempo" : 120.000008,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
 						"timestretch" : [ 0 ]
@@ -2108,14 +2213,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-185",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1685.116699, 1192.333374, 43.5, 49.0 ],
+					"patching_rect" : [ 1685.116699, 1192.333374, 44.0, 62.0 ],
 					"style" : "",
-					"text" : "open Radio1.wav"
+					"text" : "open omachikudasai.aif"
 				}
 
 			}
@@ -2160,7 +2265,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 3917.235352, "ticks" ],
+						"originallength" : [ 13552.958008, "ticks" ],
 						"originaltempo" : 120.0,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -2778,7 +2883,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.416664, 1603.333374, 45.0, 45.0 ],
+					"patching_rect" : [ 69.416664, 1596.666748, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -4111,8 +4216,8 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 179.977325, "ms" ],
-						"loopstart" : [ 79.977325, "ms" ],
+						"loopend" : [ 108.979599, "ms" ],
+						"loopstart" : [ 8.979592, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 3840.0, "ticks" ],
 						"originaltempo" : 615.671021,
@@ -4167,8 +4272,8 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 540.997742, "ms" ],
-						"loopstart" : [ 440.997742, "ms" ],
+						"loopend" : [ 494.988678, "ms" ],
+						"loopstart" : [ 394.988678, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 120.0,
@@ -4395,6 +4500,14 @@
 							"data" : [ 5, "obj-55", "number", "int", 6, 5, "obj-64", "flonum", "float", 68.0, 5, "obj-76", "live.grid", "mode", 0, 5, "obj-76", "live.grid", "matrixmode", 1, 5, "obj-76", "live.grid", "columns", 16, 5, "obj-76", "live.grid", "rows", 3, 8, "obj-76", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-76", "live.grid", "clear", 6, "obj-76", "live.grid", "steps", 1, 1, 6, "obj-76", "live.grid", "steps", 4, 2, 6, "obj-76", "live.grid", "steps", 5, 3, 8, "obj-76", "live.grid", "steps", 9, 1, 9, 2, 6, "obj-76", "live.grid", "steps", 10, 2, 6, "obj-76", "live.grid", "steps", 12, 2, 8, "obj-76", "live.grid", "steps", 13, 2, 13, 3, 6, "obj-76", "live.grid", "steps", 16, 3, 20, "obj-76", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
 , 						{
+							"number" : 11,
+							"data" : [ 5, "obj-135", "toggle", "int", 1, 5, "obj-34", "live.gain~", "float", 0.0, 5, "obj-377", "toggle", "int", 1, 5, "obj-48", "live.gain~", "float", 0.0, 5, "obj-366", "toggle", "int", 1, 5, "obj-55", "number", "int", 11, 5, "obj-64", "flonum", "float", 68.0, 5, "obj-85", "live.gain~", "float", 0.0, 5, "obj-76", "live.grid", "mode", 0, 5, "obj-76", "live.grid", "matrixmode", 1, 5, "obj-76", "live.grid", "columns", 16, 5, "obj-76", "live.grid", "rows", 3, 8, "obj-76", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-76", "live.grid", "clear", 6, "obj-76", "live.grid", "steps", 1, 1, 6, "obj-76", "live.grid", "steps", 5, 2, 6, "obj-76", "live.grid", "steps", 9, 3, 6, "obj-76", "live.grid", "steps", 15, 2, 6, "obj-76", "live.grid", "steps", 16, 2, 20, "obj-76", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-52", "live.gain~", "float", 0.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-135", "toggle", "int", 1, 5, "obj-34", "live.gain~", "float", 0.0, 5, "obj-377", "toggle", "int", 1, 5, "obj-48", "live.gain~", "float", 0.0, 5, "obj-366", "toggle", "int", 1, 5, "obj-55", "number", "int", 12, 5, "obj-64", "flonum", "float", 68.0, 5, "obj-85", "live.gain~", "float", 0.0, 5, "obj-76", "live.grid", "mode", 0, 5, "obj-76", "live.grid", "matrixmode", 1, 5, "obj-76", "live.grid", "columns", 16, 5, "obj-76", "live.grid", "rows", 3, 8, "obj-76", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-76", "live.grid", "clear", 6, "obj-76", "live.grid", "steps", 1, 3, 6, "obj-76", "live.grid", "steps", 9, 1, 6, "obj-76", "live.grid", "steps", 12, 2, 6, "obj-76", "live.grid", "steps", 13, 2, 6, "obj-76", "live.grid", "steps", 16, 3, 20, "obj-76", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-52", "live.gain~", "float", 0.0 ]
+						}
+, 						{
 							"number" : 19,
 							"data" : [ 5, "obj-135", "toggle", "int", 1, 5, "obj-34", "live.gain~", "float", 0.0, 5, "obj-377", "toggle", "int", 1, 5, "obj-48", "live.gain~", "float", 0.0, 5, "obj-366", "toggle", "int", 1, 5, "obj-55", "number", "int", 5, 5, "obj-64", "flonum", "float", 68.0, 5, "obj-85", "live.gain~", "float", 0.0, 5, "obj-52", "live.gain~", "float", -70.0, 5, "obj-76", "live.grid", "mode", 0, 5, "obj-76", "live.grid", "matrixmode", 1, 5, "obj-76", "live.grid", "columns", 16, 5, "obj-76", "live.grid", "rows", 3, 8, "obj-76", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-76", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-76", "live.grid", "clear", 6, "obj-76", "live.grid", "steps", 1, 3, 6, "obj-76", "live.grid", "steps", 5, 2, 6, "obj-76", "live.grid", "steps", 8, 3, 8, "obj-76", "live.grid", "steps", 9, 1, 9, 3, 6, "obj-76", "live.grid", "steps", 13, 2, 20, "obj-76", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
@@ -4560,8 +4673,8 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 646.984802, "ms" ],
-						"loopstart" : [ 546.957886, "ms" ],
+						"loopend" : [ 745.708618, "ms" ],
+						"loopstart" : [ 741.979004, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 120.0,
@@ -5078,11 +5191,11 @@
 						}
 , 						{
 							"number" : 9,
-							"data" : [ 5, "obj-244", "flonum", "float", 1.5, 5, "obj-241", "live.gain~", "float", 0.0, 5, "obj-243", "flonum", "float", 1.0, 5, "obj-237", "live.gain~", "float", 0.0, 5, "obj-221", "number", "int", 3, 5, "obj-124", "flonum", "float", 0.8, 5, "obj-225", "flonum", "float", 68.0, 5, "obj-109", "live.gain~", "float", 0.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 6, "obj-204", "live.grid", "steps", 1, 3, 6, "obj-204", "live.grid", "steps", 2, 3, 6, "obj-204", "live.grid", "steps", 3, 2, 6, "obj-204", "live.grid", "steps", 4, 3, 6, "obj-204", "live.grid", "steps", 5, 3, 6, "obj-204", "live.grid", "steps", 6, 2, 6, "obj-204", "live.grid", "steps", 8, 3, 6, "obj-204", "live.grid", "steps", 11, 2, 6, "obj-204", "live.grid", "steps", 12, 3, 6, "obj-204", "live.grid", "steps", 14, 2, 6, "obj-204", "live.grid", "steps", 15, 3, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-234", "live.gain~", "float", 0.0 ]
+							"data" : [ 5, "obj-244", "flonum", "float", 1.5, 5, "obj-241", "live.gain~", "float", 0.0, 5, "obj-243", "flonum", "float", 1.0, 5, "obj-237", "live.gain~", "float", 0.0, 5, "obj-221", "number", "int", 13, 5, "obj-124", "flonum", "float", 0.8, 5, "obj-225", "flonum", "float", 68.0, 5, "obj-109", "live.gain~", "float", 0.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 6, "obj-204", "live.grid", "steps", 1, 3, 6, "obj-204", "live.grid", "steps", 4, 3, 6, "obj-204", "live.grid", "steps", 5, 2, 6, "obj-204", "live.grid", "steps", 8, 1, 6, "obj-204", "live.grid", "steps", 9, 1, 6, "obj-204", "live.grid", "steps", 12, 2, 6, "obj-204", "live.grid", "steps", 13, 2, 6, "obj-204", "live.grid", "steps", 16, 3, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-234", "live.gain~", "float", 0.0 ]
 						}
 , 						{
 							"number" : 10,
-							"data" : [ 5, "obj-244", "flonum", "float", 1.0, 5, "obj-243", "flonum", "float", 1.4, 5, "obj-221", "number", "int", 6, 5, "obj-124", "flonum", "float", 1.2, 5, "obj-225", "flonum", "float", 68.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+							"data" : [ 5, "obj-244", "flonum", "float", 1.5, 5, "obj-241", "live.gain~", "float", 0.0, 5, "obj-243", "flonum", "float", 1.0, 5, "obj-237", "live.gain~", "float", 0.0, 5, "obj-221", "number", "int", 1, 5, "obj-124", "flonum", "float", 0.8, 5, "obj-225", "flonum", "float", 68.0, 5, "obj-109", "live.gain~", "float", 0.0, 5, "obj-204", "live.grid", "mode", 0, 5, "obj-204", "live.grid", "matrixmode", 1, 5, "obj-204", "live.grid", "columns", 16, 5, "obj-204", "live.grid", "rows", 3, 8, "obj-204", "live.grid", "constraint", 1, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 2, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 3, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 4, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 5, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 6, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 7, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 8, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 9, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 10, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 11, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 12, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 13, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 14, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 15, 1, 1, 1, 8, "obj-204", "live.grid", "constraint", 16, 1, 1, 1, 4, "obj-204", "live.grid", "clear", 8, "obj-204", "live.grid", "steps", 1, 1, 1, 2, 6, "obj-204", "live.grid", "steps", 3, 1, 6, "obj-204", "live.grid", "steps", 5, 1, 6, "obj-204", "live.grid", "steps", 8, 3, 6, "obj-204", "live.grid", "steps", 10, 1, 6, "obj-204", "live.grid", "steps", 16, 2, 20, "obj-204", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, "obj-234", "live.gain~", "float", 0.0 ]
 						}
 , 						{
 							"number" : 17,
@@ -6513,37 +6626,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-144", 0 ],
+					"destination" : [ "obj-390", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-145", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-382", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-147", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-169", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-148", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-178", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-149", 0 ]
 				}
 
 			}
@@ -6676,15 +6762,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-148", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-164", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-169", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -6770,15 +6847,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-170", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-149", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-171", 0 ]
 				}
 
 			}
@@ -8351,7 +8419,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-288", 1 ],
+					"destination" : [ "obj-288", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-289", 0 ]
@@ -8360,7 +8428,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-288", 0 ],
+					"destination" : [ "obj-319", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-289", 0 ]
@@ -8558,6 +8626,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-288", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-319", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8670,6 +8747,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-321", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-162", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-322", 0 ]
 				}
 
 			}
@@ -9080,6 +9166,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-356", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-160", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-357", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-360", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -9324,7 +9428,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-147", 0 ],
+					"destination" : [ "obj-382", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-383", 0 ]
@@ -9333,7 +9437,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-382", 0 ],
+					"destination" : [ "obj-440", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-383", 0 ]
@@ -9388,6 +9492,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-319", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-388", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-390", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-389", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -9401,6 +9523,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-144", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-390", 0 ]
 				}
 
 			}
@@ -9460,10 +9591,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-440", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-439", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-158", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-322", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-382", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-440", 0 ]
 				}
 
 			}
@@ -10189,43 +10347,43 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-266" : [ "live.gain~[31]", "src", 0 ],
-			"obj-28" : [ "live.gain~[3]", "snare", 0 ],
-			"obj-216" : [ "live.gain~[18]", "src", 0 ],
+			"obj-183" : [ "live.gain~[13]", "src", 0 ],
 			"obj-234" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-262" : [ "live.gain~[30]", "src", 0 ],
-			"obj-52" : [ "live.gain~[11]", "live.gain~", 0 ],
-			"obj-143" : [ "live.gain~[23]", "live.gain~", 0 ],
-			"obj-25" : [ "live.gain~[2]", "kick", 0 ],
-			"obj-183" : [ "live.gain~[13]", "src", 0 ],
-			"obj-231" : [ "live.gain~[19]", "src", 0 ],
-			"obj-34" : [ "live.gain~[10]", "src", 0 ],
-			"obj-109" : [ "live.gain~[4]", "src", 0 ],
-			"obj-301" : [ "live.gain~[33]", "src", 0 ],
-			"obj-237" : [ "live.gain~[6]", "src", 0 ],
-			"obj-218" : [ "live.gain~[29]", "src", 0 ],
-			"obj-48" : [ "live.gain~[7]", "src", 0 ],
-			"obj-385" : [ "live.gain~[34]", "src", 0 ],
-			"obj-188" : [ "live.gain~[14]", "src", 0 ],
-			"obj-254" : [ "live.gain~[20]", "src", 0 ],
-			"obj-76" : [ "live.grid[2]", "live.grid", 0 ],
-			"obj-190" : [ "live.gain~[28]", "src", 0 ],
 			"obj-7" : [ "live.gain~", "hihat", 0 ],
-			"obj-287" : [ "live.gain~[22]", "live.gain~", 0 ],
-			"obj-162" : [ "live.gain~[35]", "live.gain~", 0 ],
-			"obj-193" : [ "live.gain~[15]", "src", 0 ],
-			"obj-259" : [ "live.gain~[21]", "src", 0 ],
-			"obj-204" : [ "live.grid[1]", "live.grid", 0 ],
-			"obj-166" : [ "live.gain~[26]", "src", 0 ],
+			"obj-385" : [ "live.gain~[34]", "src", 0 ],
+			"obj-143" : [ "live.gain~[23]", "live.gain~", 0 ],
+			"obj-211" : [ "live.gain~[17]", "src", 0 ],
+			"obj-188" : [ "live.gain~[14]", "src", 0 ],
+			"obj-237" : [ "live.gain~[6]", "src", 0 ],
+			"obj-254" : [ "live.gain~[20]", "src", 0 ],
+			"obj-218" : [ "live.gain~[29]", "src", 0 ],
 			"obj-85" : [ "live.gain~[8]", "src", 0 ],
-			"obj-176" : [ "live.gain~[27]", "src", 0 ],
 			"obj-77" : [ "live.grid", "live.grid", 0 ],
 			"obj-241" : [ "live.gain~[9]", "src", 0 ],
-			"obj-203" : [ "live.gain~[16]", "src", 0 ],
+			"obj-204" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-193" : [ "live.gain~[15]", "src", 0 ],
+			"obj-28" : [ "live.gain~[3]", "snare", 0 ],
+			"obj-109" : [ "live.gain~[4]", "src", 0 ],
+			"obj-190" : [ "live.gain~[28]", "src", 0 ],
+			"obj-216" : [ "live.gain~[18]", "src", 0 ],
+			"obj-301" : [ "live.gain~[33]", "src", 0 ],
+			"obj-162" : [ "live.gain~[35]", "live.gain~", 0 ],
+			"obj-176" : [ "live.gain~[27]", "src", 0 ],
+			"obj-259" : [ "live.gain~[21]", "src", 0 ],
 			"obj-20" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-270" : [ "live.gain~[32]", "src", 0 ],
+			"obj-287" : [ "live.gain~[22]", "live.gain~", 0 ],
+			"obj-52" : [ "live.gain~[11]", "live.gain~", 0 ],
+			"obj-203" : [ "live.gain~[16]", "src", 0 ],
+			"obj-166" : [ "live.gain~[26]", "src", 0 ],
+			"obj-76" : [ "live.grid[2]", "live.grid", 0 ],
+			"obj-266" : [ "live.gain~[31]", "src", 0 ],
+			"obj-25" : [ "live.gain~[2]", "kick", 0 ],
+			"obj-231" : [ "live.gain~[19]", "src", 0 ],
 			"obj-168" : [ "live.gain~[12]", "src", 0 ],
-			"obj-211" : [ "live.gain~[17]", "src", 0 ]
+			"obj-34" : [ "live.gain~[10]", "src", 0 ],
+			"obj-48" : [ "live.gain~[7]", "src", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
